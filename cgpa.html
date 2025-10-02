@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+    <h1>Theory Marks Entry</h1>
+    <form id="theoryForm">
+        <table id="theoryTable">
+            <tr>
+                <th>Subject Name</th>
+                <th>ESE Marks</th>
+                <th>IA Marks</th>
+                <th>Credit</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Theory Subject 1"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Theory Subject 2"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Theory Subject 3"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Theory Subject 4"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Theory Subject 5"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button type="button" id="calculateTheoryBtn">Calculate Theory GPA</button>
+            <button type="reset">Reset Theory Form</button>
+        </div>
+    </form>
+
+    <h1>Practical Marks Entry</h1>
+    <form id="practicalForm">
+        <table id="practicalTable">
+            <tr>
+                <th>Practical Name</th>
+                <th>ESE Marks</th>
+                <th>IA Marks</th>
+                <th>Credit</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Practical 1"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Practical 2"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Practical 3"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Practical 4"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="subject" placeholder="Practical 5"></td>
+                <td><input type="number" class="ese" placeholder="ESE"></td>
+                <td><input type="number" class="ia" placeholder="IA"></td>
+                <td><input type="number" class="credit" placeholder="Credit"></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button type="button" id="calculatePracticalBtn">Calculate Practical GPA</button>
+            <button type="reset">Reset Practical Form</button>
+        </div>
+    </form>
+
+    <div class="buttons">
+        <button type="button" id="calculateOverallBtn">Calculate Overall CGPA</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="cgpa.js"></script>
+</body>
+</html>
