@@ -41,7 +41,7 @@ function calculateGPA(tableId, isPractical = false) {
         totalCredits += credit;
         totalGradePoints += gradePoint * credit;
 
-        resultText += ${subjects[i].value}: Marks = ${rawTotal}, Grade Point = ${gradePoint}<br>;
+        resultText += `${subjects[i].value}: Marks = ${rawTotal}, Grade Point = ${gradePoint}<br>`;
     }
 
     const gpa = totalCredits ? (totalGradePoints / totalCredits).toFixed(2) : 0;
@@ -51,13 +51,13 @@ function calculateGPA(tableId, isPractical = false) {
 // Event listeners for Theory GPA
 document.getElementById("calculateTheoryBtn").addEventListener("click", () => {
     const { resultText, gpa } = calculateGPA("theoryTable", false);
-    document.getElementById("result").innerHTML = <h3>Theory GPA</h3>${resultText}<br><strong>GPA: ${gpa}</strong>;
+    document.getElementById("result").innerHTML = `<h3>Theory GPA</h3>${resultText}<br><strong>GPA: ${gpa}</strong>`;
 });
 
 // Event listeners for Practical GPA
 document.getElementById("calculatePracticalBtn").addEventListener("click", () => {
     const { resultText, gpa } = calculateGPA("practicalTable", true);
-    document.getElementById("result").innerHTML = <h3>Practical GPA</h3>${resultText}<br><strong>GPA: ${gpa}</strong>;
+    document.getElementById("result").innerHTML = `<h3>Practical GPA</h3>${resultText}<br><strong>GPA: ${gpa}</strong>`;
 });
 
 // Event listener for Overall CGPA
