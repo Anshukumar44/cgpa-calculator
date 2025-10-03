@@ -5,19 +5,31 @@ body {
     text-align: center;
 }
 
-h1 {
-    color: #333;
+h1,h2 {
+    color: #1e0338;
+      font-family:'Lucida Sans';
 }
 
 table {
     margin: 20px auto;
     border-collapse: collapse;
     width: 80%;
+   
+   
 }
 
-th, td {
+th, td{
     padding: 10px;
     border: 1px solid #ddd;
+   
+
+}
+th{
+     background-color:#154c79 ;
+     color: #2596be;
+}
+td :hover{
+    background-color: aqua;
 }
 
 input {
